@@ -707,13 +707,13 @@ while true; do
                 bw_info="${used_gb}/${bandwidth_gb} GB used | ${remain_gb} GB left"
             fi
 
-             banner_content="<br><font color=\"white\"><b>🆅🅸🆂🅸🅱🅻🅴 🆃🅴🅲🅷 🅜🅐🅝🅐🅖🅔🅡</b></font><br><br>"
+             banner_content="<br><font color=\"white\"><b>🅥🅘🅢🅘🅑🅛🅔 🅣🅔🅒🅗 🅜🅐🅝🅐🅖🅔🅡</b></font><br><br>"
             banner_content+="<br><font color=\"red\"><b> ғᴏᴜɴᴅᴇʀ ᴏʀ sᴄʀɪᴘᴛ .inc🦜 </b></font><br><br>"
-            banner_content+="<br><font color=\"white\"><b>       ✨ 🅄🅂🄴🅁 🄳🅁🅃🄰🄸🄻✨     </b></font><br><br>"
-            banner_content+="<font color=\"white\">👤 <b>ᥲᥴᥴ᥆ᥙᥒ𝗍 ძᥱ𝗍ᥲіᥣ :</b> $user</font><br>"
-            banner_content+="<font color=\"green\">📅 <b>🅔🅧🅟🅘🅡🅔 🅣🅘🅜🅔 :</b> $expiry ($days_left)</font><br>"
-            banner_content+="<font color=\"cyan\">📊 <b>𝘋𝘈𝘛𝘈 𝘜𝘚𝘌𝘋:</b> $bw_info</font><br>"
-            banner_content+="<font color=\"white\">🖲️ <b> ᥴ᥆ᥒᥒᥱᥴ𝗍ᥱძ ⍴ᥱ᥆⍴ᥣᥱ :</b> $online_count/$limit</font><br><br>"
+            banner_content+="<br><font color=\"white\"><b>       ✨🅃🄰🄰🅁🄸🄵🄰 🅉🄰 🄰🄲🄲🄾🅄🄽🅃✨     </b></font><br><br>"
+            banner_content+="<font color=\"white\">👤 <b>🅹🅸🅽🅰 🅻🅰 🅰🅲🅲🅾🆄🅽🆃:</b> $user</font><br>"
+            banner_content+="<font color=\"green\">📅 <b> 🅂🄸🄺🅄 🅈🄰🄺🅄🄴🅇🄿🄸🅁🄴 :</b> $expiry ($days_left)</font><br>"
+            banner_content+="<font color=\"cyan\">📊 <b>█▓▒▒░░░MATUMIZI░░░▒▒▓█:</b> $bw_info</font><br>"
+            banner_content+="<font color=\"white\">🖲️ <b> ꜰɪʟᴇ ᴢɪʟɪᴢᴏ ᴄᴏɴɴᴇᴄᴛ :</b> $online_count/$limit</font><br><br>"
             write_banner_if_changed "$user" "$banner_content"
         fi
 
