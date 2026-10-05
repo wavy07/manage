@@ -902,17 +902,25 @@ while true; do
                 printf -v remain_gb "%d.%02d" "$remain_gb_int" "$remain_gb_frac"
                 bw_info="${used_gb}/${bandwidth_gb} GB used | ${remain_gb} GB left"
             fi
+            
+            banner_content="<center>"
+            banner_content+="<font color=\"white\"><b>🅥🅘🅢🅘🅑🅛🅔 🅣🅔🅒🅗 🅜🅐🅝🅐🅖🅔🅡</b></font><br>"
+            banner_content+="<font color=\"red\"><b>ғᴏᴜɴᴅᴇʀ ᴏʀ sᴄʀɪᴘᴛ .inc🦜</b></font><br>"
+            banner_content+="<font color=\"yellow\">▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬</font><br>"
+            banner_content+="<font color=\"cyan\"><b>✨🅃🄰🄰🅁🄸🄵🄰 🅉🄰 🄰🄲🄲🄾🅄🄽🅃✨</b></font><br>"
+            banner_content+="<font color=\"magenta\">▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬</font><br><br>"
 
-            banner_content="<br><font color=\"white\"><b>🅥🅘🅢🅘🅑🅛🅔 🅣🅔🅒🅗 🅜🅐🅝🅐🅖🅔🅡</b></font><br><br>"
-            banner_content+="<br><font color=\"red\"><b> ғᴏᴜɴᴅᴇʀ ᴏʀ sᴄʀɪᴘᴛ .inc🦜 </b></font><br><br>"
-            banner_content+="<br><font color=\"white\"><b>✨🅃🄰🄰🅁🄸🄵🄰 🅉🄰 🄰🄲🄲🄾🅄🄽🅃✨</b></font><br><br>"
-            banner_content+="<font color=\"white\">👤<b>🅹🅸🅽🅰 🅻🅰 🅰🅲🅲🅾🆄🅽🆃:</b> $user</font><br>"
-            banner_content+="<font color=\"green\">📅<b> 🅂🄸🄺🅄 🅈🄰🄺🅄🄴🅇🄿🄸🅁🄴 :</b> $expiry ($days_left)</font><br>"
-            
+            banner_content+="<font color=\"orange\">👤<b>🅹🅸🅽🅰 🅻🅰 🅰🅲🅲🅾🆄🅽🆃:</b></font> <font color=\"white\">$user</font><br>"
+            banner_content+="<font color=\"blue\">▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬</font><br>"
+
+            banner_content+="<font color=\"lime\">📅<b> 🅂🄸🄺🅄 🅈🄰🄺🅄🄴🅇🄿🄸🅁🄴 :</b></font> <font color=\"red\">$expiry ($days_left)</font><br>"
+            banner_content+="<font color=\"blue\">▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬</font><br>"
+
             if [[ "$bandwidth_gb" != "0" ]]; then
-                banner_content+="<font color=\"cyan\">📊<b>█▓▒▒░░░MATUMIZI░░░▒▒▓█:</b> $bw_info</font><br>"
+                banner_content+="<font color=\"cyan\">📊<b>█▓▒░MATUMIZI░▒▓█:</b></font> <font color=\"white\">$bw_info</font><br>"
+                banner_content+="<font color=\"blue\">▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬</font><br>"
             fi
-            
+
             if [[ "$daily_bandwidth_gb" != "0" ]]; then
                 daily_usagefile="$BW_DIR/${user}.daily_usage"
                 accum_disp=0
@@ -930,10 +938,14 @@ while true; do
                 remain_gb_frac=$(( (remain_b % 1073741824) * 100 / 1073741824 ))
                 printf -v remain_gb "%d.%02d" "$remain_gb_int" "$remain_gb_frac"
                 daily_bw_info="${used_gb}/${daily_bandwidth_gb} GB used | ${remain_gb} GB left"
-                banner_content+="<font color=\"white\">📊 <b>𝕄𝔸𝕋𝕌𝕄𝕀ℤ𝕀 𝕐𝔸 𝕊𝕀𝕂𝕌:</b> $daily_bw_info</font><br>"
+                banner_content+="<font color=\"white\">📊 <b>𝕄𝔸𝕋𝕌𝕄𝕀ℤ𝕀 𝕐𝔸 𝕊𝕀𝕂𝕌:</b></font> <font color=\"cyan\">$daily_bw_info</font><br>"
+                banner_content+="<font color=\"blue\">▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬</font><br>"
             fi
-            
-            banner_content+="<font color=\"white\">🖲️ <b> ꜰɪʟᴇ ᴢɪʟɪᴢᴏ ᴄᴏɴɴᴇᴄᴛ:</b> $online_count/$limit</font><br><br>"
+
+            banner_content+="<font color=\"gold\">🖲️ <b>FILE ZILIZO CONNECT:</b></font> <font color=\"lightgreen\">$online_count/$limit</font><br>"
+            banner_content+="<font color=\"magenta\">▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬</font><br><br>"
+            banner_content+="</center>"
+
             write_banner_if_changed "$user" "$banner_content"
         fi
 
