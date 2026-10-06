@@ -912,7 +912,7 @@ while true; do
              fi
             
             banner_content="<center>"
-            banner_content+="<font color=\"white\"><b>𝓥𝓘𝓢𝓘𝓑𝓛𝓔 𝓣𝓔𝓒𝓗 𝓥𝓟𝓢 𝓒𝓛𝓘𝓔𝓝𝓣𝓢 𝓜𝓐𝓝𝓐𝓖𝓔𝓡⚙️</b></font><br>"
+            banner_content+="<font color=\"white\"><b>𝕍𝕀𝕊𝕀𝔹𝕃𝔼 𝕋𝔼ℂℍ 𝕍ℙ𝕊 ℂ𝕃𝕀𝔼ℕ𝕋𝕊 𝕄𝔸ℕ𝔸𝔾𝔼ℝ⚙️</b></font><br>"
             banner_content+="<font color=\"red\"><b>✩𝐓𝐇𝐄 𝐆𝐑𝐄𝐀𝐓 𝐏𝐑𝐎𝐅𝐅𝐄𝐒𝐒𝐎𝐑 .𝐈𝐧𝐜🦜✩</b></font><br>"
             banner_content+="<font color=\"yellow\">▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬</font><br>"
             banner_content+="<font color=\"cyan\"><b>✨T̳̿͟͞A̳̿͟͞A̳̿͟͞R̳̿͟͞I̳̿͟͞F̳̿͟͞A̳̿͟͞ Z̳̿͟͞A̳̿͟͞ A̳̿͟͞C̳̿͟͞C̳̿͟͞O̳̿͟͞U̳̿͟͞N̳̿͟͞T̳̿͟͞✨</b></font><br>"
