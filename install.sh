@@ -54,8 +54,8 @@ clear
 
 echo
 echo -e "${C_PURPLE}${C_BOLD}╔═════════════════════════════════════════════════════════════════════╗${C_RESET}"
-echo -e "${C_PURPLE}${C_BOLD}║${C_RESET} ${C_WHITE}${C_BOLD}VISIBLE TECH${C_RESET} ${C_GRAY}MANAGER INSTALLER${C_RESET}${C_PURPLE}${C_BOLD}║${C_RESET}"
-echo -e "${C_PURPLE}${C_BOLD}║${C_RESET}                    ${C_ORANGE}Premium Edition${C_RESET}         ${C_PURPLE} ${C_BOLD}             ║${C_RESET}"
+echo -e "${C_PURPLE}${C_BOLD}║     ${C_RESET} ${C_WHITE}${C_BOLD}VISIBLE TECH${C_RESET} ${C_GRAY}  MANAGER INSTALLER.   ${C_RESET} ${C_PURPLE} ${C_BOLD}    ║${C_RESET}"
+echo -e "${C_PURPLE}${C_BOLD}║${C_RESET}                    ${C_ORANGE}Premium Edition${C_RESET}         ${C_PURPLE} ${C_BOLD}                  ║${C_RESET}"
 echo -e "${C_PURPLE}${C_BOLD}╚═════════════════════════════════════════════════════════════════════╝${C_RESET}"
 echo
 echo -e "${C_GRAY}             SSH • Proxy • Tunnel Management${C_RESET}"
