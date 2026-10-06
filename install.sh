@@ -52,18 +52,20 @@ fi
 
 clear
 
-# ---------- colour vars (use whatever you defined; shown for copy-paste) ----------
 C_PURPLE=$'\033[95m'; C_BOLD=$'\033[1m'; C_RESET=$'\033[0m'
 C_WHITE=$'\033[97m'; C_GRAY=$'\033[90m'; C_ORANGE=$'\033[38;5;208m'
 
-# ---------- heading ----------
 echo
-echo -e "${C_PURPLE}${C_BOLD}╔═══════════════════════════════════════════════════════════════════════════╗${C_RESET}"
-echo -e "${C_PURPLE}${C_BOLD}║${C_RESET}          ${C_WHITE}${C_BOLD}VISIBLE TECH MANAGER INSTALLER${C_RESET}                          ${C_PURPLE}${C_BOLD}║${C_RESET}"
-echo -e "${C_PURPLE}${C_BOLD}║${C_RESET}                        ${C_ORANGE}Premium Edition${C_RESET}                              ${C_PURPLE}${C_BOLD}║${C_RESET}"
-echo -e "${C_PURPLE}${C_BOLD}╚═══════════════════════════════════════════════════════════════════════════╝${C_RESET}"
+# 62 inner chars between borders
+echo -e "${C_PURPLE}${C_BOLD}╔══════════════════════════════════════════════════════════════════════╗${C_RESET}"
+# 30 chars text -> 16 left + 16 right = 62
+echo -e "${C_PURPLE}${C_BOLD}║${C_RESET}                ${C_WHITE}${C_BOLD}VISIBLE TECH MANAGER INSTALLER${C_RESET}                ${C_PURPLE}${C_BOLD}║${C_RESET}"
+# 15 chars text -> 23 left + 24 right = 62
+echo -e "${C_PURPLE}${C_BOLD}║${C_RESET}                       ${C_ORANGE}Premium Edition${C_RESET}                        ${C_PURPLE}${C_BOLD}║${C_RESET}"
+echo -e "${C_PURPLE}${C_BOLD}╚══════════════════════════════════════════════════════════════════════╝${C_RESET}"
 echo
-echo -e "                    ${C_GRAY}SSH • Proxy • Tunnel Management${C_RESET}"
+# subtitle centered to total 64 chars (border-to-border)
+echo -e "                 ${C_GRAY}SSH • Proxy • Tunnel Management${C_RESET}"
 echo
 
 # ============================================================
