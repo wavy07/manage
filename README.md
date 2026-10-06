@@ -13,22 +13,11 @@ Whether you're managing 5 users or 500, deploying complex protocols, or locking 
 
 It takes less than a minute to deploy the complete visible tech Manager on your fresh VPS. Choose the installation method that works best for you:
 
-### MANAGER 1 (SSH MANAGER WITH WS,STUNNEL,DNSTT AND V2RAY)🔥
+
+
+### MANAGER INSTALLATION💡
 ```bash
 curl -L -o install.sh "https://raw.githubusercontent.com/wavy07/manage/main/install.sh" && chmod +x install.sh && sudo ./install.sh && rm install.sh
-```
-### MANAGER 2 (SSH MANAGER WITH WS,STUNNEL AND DNSTT)😊
-```bash
-curl -L -o install.sh "https://raw.githubusercontent.com/wavy07/manage/main/install.sh" && chmod +x install.sh && sudo ./install1.sh && rm install1.sh
-```
-### MANAGER 3(SSH MANAGER WITH WS AND STUNNEL)☑️
-```bash
-curl -L -o install.sh "https://raw.githubusercontent.com/wavy07/manage/main/install.sh" && chmod +x install.sh && sudo ./install2.sh && rm install2.sh
-```
-
-### MANAGER 4 (SSH MANAGER ONLY)💡
-```bash
-curl -L -o install.sh "https://raw.githubusercontent.com/wavy07/manage/main/install.sh" && chmod +x install.sh && sudo ./install3.sh && rm install3.sh
 ```
 
 
