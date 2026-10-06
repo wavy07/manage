@@ -59,8 +59,8 @@ C_WHITE=$'\033[97m'; C_GRAY=$'\033[90m'; C_ORANGE=$'\033[38;5;208m'
 # ---------- heading ----------
 echo
 echo -e "${C_PURPLE}${C_BOLD}╔═══════════════════════════════════════════════════════════════════════════╗${C_RESET}"
-echo -e "${C_PURPLE}${C_BOLD}║${C_RESET}     ${C_WHITE}${C_BOLD}VISIBLE TECH MANAGER INSTALLER${C_RESET}                ${C_PURPLE}${C_BOLD}║${C_RESET}"
-echo -e "${C_PURPLE}${C_BOLD}║${C_RESET}                        ${C_ORANGE}Premium Edition${C_RESET}                        ${C_PURPLE}${C_BOLD}║${C_RESET}"
+echo -e "${C_PURPLE}${C_BOLD}║${C_RESET}          ${C_WHITE}${C_BOLD}VISIBLE TECH MANAGER INSTALLER${C_RESET}                          ${C_PURPLE}${C_BOLD}║${C_RESET}"
+echo -e "${C_PURPLE}${C_BOLD}║${C_RESET}                        ${C_ORANGE}Premium Edition${C_RESET}                              ${C_PURPLE}${C_BOLD}║${C_RESET}"
 echo -e "${C_PURPLE}${C_BOLD}╚═══════════════════════════════════════════════════════════════════════════╝${C_RESET}"
 echo
 echo -e "                    ${C_GRAY}SSH • Proxy • Tunnel Management${C_RESET}"
