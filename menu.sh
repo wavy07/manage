@@ -7968,7 +7968,6 @@ main_menu() {
             12) protocol_menu ;;
             13) traffic_monitor_menu ;;
             14) torrent_block_menu ;;
-            22) v2ray_entry ;;
             
             15) dns_menu; press_enter ;;
             16) ssh_banner_menu ;;
@@ -7977,6 +7976,7 @@ main_menu() {
             19) restore_user_data; press_enter ;;
             20) cleanup_expired; press_enter ;;
             21) web_panel_menu ;;
+            22) v2ray_entry ;;
             
             99) uninstall_script ;;
             0) exit 0 ;;
