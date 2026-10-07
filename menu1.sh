@@ -82,7 +82,7 @@ PANEL_HTML_FILE="$DB_DIR/panel/index.html"
 PANEL_CONF="$DB_DIR/panel.conf"
 PANEL_SERVICE_FILE="/etc/systemd/system/visibleTech-panel.service"
 PANEL_PORT=44380
-PANEL_REPO_BASE="https://github.com/wavy07/manage/raw/branch/main/panel"
+PANEL_REPO_BASE="https://github.com/wavy07/manage/raw/main/panel"
 
 # --- ZiVPN Variables ---
 ZIVPN_DIR="/etc/zivpn"
