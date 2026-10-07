@@ -7953,7 +7953,7 @@ main_menu() {
         if ! read -r -p "$(echo -e "${C_PROMPT}👉 Select an option: ${C_RESET}")" choice; then
             echo
             exit 0
-        fi
+        
 
 The important fixes are option 21 and the "read" line. The "read" line is also now properly quoted:
 
