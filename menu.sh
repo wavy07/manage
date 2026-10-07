@@ -7941,7 +7941,7 @@ main_menu() {
         printf "     ${C_CHOICE}[%2s]${C_RESET} %-28s ${C_CHOICE}[%2s]${C_RESET} %-28s\n" "15" "🌐 Free Domain (deSEC)" "16" "🎨 SSH Banner Config"
         printf "     ${C_CHOICE}[%2s]${C_RESET} %-28s ${C_CHOICE}[%2s]${C_RESET} %-28s\n" "17" "🔄 Auto-Reboot Task" "18" "💾 Backup User Data"
         printf "     ${C_CHOICE}[%2s]${C_RESET} %-28s ${C_CHOICE}[%2s]${C_RESET} %-28s\n" "19" "📥 Restore User Data" "20" "🧹 Cleanup Expired Users"
-        printf "     ${C_CHOICE}[%2s]${C_RESET} %-28s\n "21" "🌐 Web Control panel" 
+        printf "     ${C_CHOICE}[%2s]${C_RESET} %-28s "21" "🌐 Web Control panel" 
         printf "     ${C_CHOICE}[%2s]${C_RESET} %-28s\n" "22" "🛰️  V2Ray (Xray) Manager"
 
         
