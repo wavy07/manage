@@ -7953,8 +7953,8 @@ main_menu() {
         if ! read -r -p "$(echo -e "${C_PROMPT}👉 Select an option: ${C_RESET}")" choice; then
             echo
             exit 0
-        
-
+   fi
+  
 The important fixes are option 21 and the "read" line. The "read" line is also now properly quoted:
 
 "$(echo -e "${C_PROMPT}👉 Select an option: ${C_RESET}")"
@@ -7964,7 +7964,7 @@ After replacing it, run:
 bash -n yourscript.sh
 
 If there is no output, Bash found no syntax errors.
-        fi
+        
         case $choice in
             1) create_user; press_enter ;;
             2) delete_user; press_enter ;;
