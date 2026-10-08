@@ -17,9 +17,19 @@ It takes less than a minute to deploy the complete visible tech Manager on your 
 
 ### MANAGER INSTALLATION💡
 ```bash
+
+# on the server🚦
+
+sudo rm -f /etc/resolv.conf && \
+sudo tee /etc/resolv.conf >/dev/null <<'EOF'
+nameserver 1.1.1.1
+nameserver 8.8.8.8
+nameserver 9.9.9.9
+EOF
+apt update && \
+apt install -y curl && \
 curl -L -o install.sh "https://raw.githubusercontent.com/wavy07/manage/main/install.sh" && chmod +x install.sh && sudo ./install.sh && rm install.sh
 ```
-
 
 *(Once installed, simply type `menu` in your terminal to launch the interface!)*
 
