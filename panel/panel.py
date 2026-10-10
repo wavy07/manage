@@ -68,6 +68,8 @@ PROTOCOLS = [
      "port": "80", "port_conf": ("websocket_config.conf", "WS_PORTS")},
     {"name": "Stunnel (SSL/TLS)", "service": "visibleTech-stunnel", "check_file": "/etc/systemd/system/visibleTech-stunnel.service",
      "port": "443", "port_conf": ("stunnel_info.conf", "ST_PORT")},
+    {"name": "HAProxy (Port Multiplexer)", "service": "visibleTech-mux", "check_file": "/etc/systemd/system/visibleTech-mux.service",
+     "port": "80/443", "port_confs": [("mux/mux.conf", "MUX_PLAIN_PORTS"), ("mux/mux.conf", "MUX_TLS_PORTS")]},
     {"name": "FastDns (DNSTT)", "service": "server-sldns", "check_file": "/etc/systemd/system/server-sldns.service", "port": "53"},
     {"name": "EDNS Proxy", "service": "edns-proxy", "check_file": "/etc/systemd/system/edns-proxy.service", "port": "53"},
     {"name": "ZiVPN", "service": "zivpn", "check_file": "/etc/systemd/system/zivpn.service", "port": "5667"},
@@ -1024,6 +1026,14 @@ class PanelAPIHandler(BaseHTTPRequestHandler):
                 val = conf_value(*p["port_conf"]).replace(" ", ",")
                 if val:
                     port_txt = val
+            if "port_confs" in p:
+                vals = []
+                for cf in p["port_confs"]:
+                    v = conf_value(*cf).replace(" ", ",")
+                    if v:
+                        vals.append(v)
+                if vals:
+                    port_txt = ",".join(vals)
             procs.append({
                 "name": p["name"],
                 "service": p["service"],
